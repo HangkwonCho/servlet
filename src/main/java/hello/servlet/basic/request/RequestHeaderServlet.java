@@ -89,6 +89,8 @@ public class RequestHeaderServlet extends HttpServlet {
     private void printEtc(HttpServletRequest request) {
         System.out.println("--- 기타 조회 start ---");
 
+        // 로컬에서 테스트하면 IPv6정보가 나오는데 IPv4 정보를 보고 싶으면 다음 오션을 VM Options 넿어주면 된다.
+        // -Djava.net.preferIPv4Stack=true
         System.out.println("[Remote 정보]");
         System.out.println("request.getRemoteHost() = " + request.getRemoteHost()); //
         System.out.println("request.getRemoteAddr() = " + request.getRemoteAddr()); //
