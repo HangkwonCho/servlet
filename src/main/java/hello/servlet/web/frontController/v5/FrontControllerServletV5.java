@@ -25,6 +25,17 @@ import java.util.Map;
 @WebServlet(name ="frontControllerServletV5", urlPatterns = "/front-controller/v5/*")
 public class FrontControllerServletV5 extends HttpServlet {
 
+    /**
+     * frontControllerServletV5 - 스프링 MVC
+     * ====================================
+     * FrontControllerServletV5 -> DispatcherServlet
+     * handlerMappingMap        -> HandlerMapping
+     * MyHandlerAdapter         -> HandlerAdapter
+     * ModelView                -> ModelAndView
+     * viewResolver             -> ViewResolver
+     * MyView                   -> View
+     */
+
     private final Map<String, Object> handlerMappingMap = new HashMap<>();
     private final List<MyHandlerAdapter> handlerAdapters = new ArrayList<>();
 
