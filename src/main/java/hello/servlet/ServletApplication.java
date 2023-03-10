@@ -3,8 +3,6 @@ package hello.servlet;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.ServletComponentScan;
-import org.springframework.context.annotation.Bean;
-import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 @ServletComponentScan
 @SpringBootApplication
@@ -18,5 +16,11 @@ public class ServletApplication {
 	/*@Bean
 	InternalResourceViewResolver internalResourceViewResolver() {
 		return new InternalResourceViewResolver("/WEB-INF/views/", ".jsp");
+	}*/
+
+	// 해당 컨트롤러에 Component 또는 Controller를 제거후 직접 bean으로 등록해도 됨.
+	/*@Bean
+	SpringMemberFormControllerV1 springMemberFormControllerV1() {
+		return new SpringMemberFormControllerV1();
 	}*/
 }
